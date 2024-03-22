@@ -1,0 +1,17 @@
+#ifdef OPLUS_FEATURE_HEALTHINFO
+#//wenbin.liu@PSW.Kernel.MM, 2018/05/23, Add for Healthinfo monitor
+config OPLUS_HEALTHINFO
+bool "config healthinfo"
+help
+    define this config to init  healthinfo.
+
+config OPLUS_HEALTHINFO_CPUFREQ_MAX
+bool "config cpufreq max"
+help
+    define this config for cpufreq max.
+#endif /* OPLUS_FEATURE_HEALTHINFO */
+config OPLUS_FEATURE_AUDIO_OPT
+        bool "config audio opt"
+        default n
+        help
+          audio task schedule opt
